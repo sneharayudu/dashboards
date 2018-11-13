@@ -1,0 +1,16 @@
+{% include 'home.html' %}
+
+{% block content %}
+
+<h3>contact form</h3>
+<form action="/api/contact_details" method="POST">
+    <input type="text" name="name" placeholder="Name" required> </br>
+    <input type="text" name="email" placeholder="Email Address" required></br>
+    <input type="text" name="number" placeholder="Phone Number" required></br>
+    <input type="radio" name="jobfeild" id="developer" value="developer"> developer </input><br>
+    <input type="radio" name="jobfeild" id="designer" value="designer"> designer </input><br>
+    <input type="submit" value="SUBMIT">
+</form>
+
+{% endblock %}
+

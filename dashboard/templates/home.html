@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home page</title>
+</head>
+<body>
+{{ message }}
+
+<div class="container">
+<ul>
+    <nav>
+        <a href="/api/contact_form">contact_form</a> |
+        <a href="/api/personal_data">personal_data</a> |
+        <a href="/api/jobfeild">jobfeild</a>|
+        <a href="/api/logout">logout</a>
+    </nav>
+</ul>
+</div>
+
+{% block content %}   {% endblock %}
+
+
+
+</body>
+</html>
